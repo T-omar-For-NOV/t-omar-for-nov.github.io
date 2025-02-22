@@ -1,0 +1,195 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/pdp.jpg
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Omar Trigui
+title: Cloud Native engineer
+email: omar.trigui@leminnov.com
+website: www.github.com/sproogen/resume-theme 
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+twitter_username: facespics
+github_username:  T-omar-For-NOV
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+instagram_username: jameswgrant
+linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+- title: itsgoingto.be
+  icon: fas fa-globe
+  url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/pdp.jpg
+about_content: | # this will include new lines to allow paragraphs
+  As a passionate Cloud Native Engineer, I am on a continuous journey to expand my expertise in the landscape of cloud computing and DevOps.
+  
+  My professional goal is to tackle increasingly challenges within these ﬁelds with a focus on harnessing the latest technologies to architect resilient, scalable, and eﬃcient cloud-native solutions, aiming to contribute to the advancement of these ﬁelds.
+
+
+content:
+  - title: Projects
+    layout: list
+    content:
+      - layout: top-middle
+        title: Multi-Cluster Communication with Service Mesh
+        link: https://github.com/Saifweb
+        additional_links:
+          - title: Saifweb GitHub
+            icon: fab fa-github
+            url: https://github.com/Saifweb
+        quote: >
+          Implemented multi-cluster communication spanning multiple cloud providers with advanced traffic management using Istio.
+        description: |
+          - Use Terraform modules and Terragrunt layers to provision your EKS, AKS, and K3s Kubernetes clusters on Equinix bare metal servers. 
+          - Integrate provisioned clusters with Rancher for centralized management. 
+          - Install Istio on each of the three clusters and ensure multicluster communication spanning multiple networks. 
+          - Configure Istio's mTLS to ensure secure communication between services in all clusters. 
+          - Create a Helm chart that defines the demo application you want to deploy. This chart includes the application deployment, services, and other necessary Kubernetes resources. 
+          - Deploy the helm chart using argocd deployed on primary cluster. - Utilize Istio for advanced traffic management. Define VirtualServices and Gateway resources to control how traffic is routed and load balanced across clusters. 
+          - Configure Istio to implement fine-grained authorization and authentication policies to secure traffic between clusters. - Visualize the mesh using Kiali and collect metrics and traces with Grafana and Jaeger. 
+          - Deploy Istio Ingress Gateway in each cluster to expose your application externally over HTTPS. 
+          - Building CI/CD pipeline containing stages, jobs and dependencies to automate the process.
+
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: LEMINNOV
+        sub_title: Cloud Native and DevOps Engineer
+        caption: February 2023 - October 2023   
+        quote: >
+          Implemented multi-cluster communication spanning multiple cloud providers with advanced traffic management using Istio.
+        description: |
+          **Keywords:** Kubernetes, Docker, Helm Istio, AWS, Azure, Equinix Metal, Terraform, Terragrunt, GitLabCI, ArgoCD
+      - layout: left
+        title: Leminup
+        link: https://leminup.com
+        sub_title: Cloud Native and DevOps Engineer
+        caption: February 2023 - Present
+        quote: >
+          Automating deployments, enabling developer self-service, and building multi-cluster systems across cloud providers.
+        description: |
+          - Designed and implemented a multi-tenant GitOps architecture using Flux, Helm, and Kustomize.
+          - Built a self-service portal using Backstage, enabling developers to access cloud services easily.
+          - Deployed k3s clusters on bare-metal using Tinkerbell.
+          - Developed multi-cluster service mesh communication with Istio across AWS, Azure, and Equinix.
+
+      - layout: left
+        title: Atom Engineering
+        link: https://atomengineering.tn
+        sub_title: R&D Cloud Engineer
+        caption: October 2022 - December 2022
+        quote: >
+          Automating infrastructure deployment with Terraform and AWS.
+        description: |
+          - Automated AWS infrastructure deployment using Terraform and Docker.
+          - Implemented secure, scalable cloud architecture with CI/CD workflows using GitLab CI.
+
+      - layout: left
+        title: Atom Engineering
+        link: https://atomengineering.tn
+        sub_title: Software Engineer Intern
+        caption: June 2022 - September 2022
+        quote: >
+          Building and deploying an event management web app using Azure DevOps.
+        description: |
+          - Developed a web application using Angular and DotNet 6.
+          - Deployed the application on Azure Kubernetes Service (AKS) with CI/CD pipelines and SonarQube integration.
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: High School of Communication of Tunis (Sup'Com)
+        caption: 2020 - 2023
+        sub_title: Engineer’s Degree in Computer Science and Communication
+        quote: >
+          Specialized in WLAN, IP Networks, Cloud Fundamentals, and Big Data.
+        description: |
+          Learned core subjects like WLAN, IP Networks, Cloud Computing, Big Data, Algorithms, and Macroeconomics.
+
+      - layout: left
+        title: Sfax Preparatory Engineering Institute (IPEIS)
+        caption: 2018 - 2020
+        sub_title: Preparatory Diploma in Mathematics and Physics
+        quote: >
+          Ranked 171 out of 1786 students.
+        description: |
+          Focused on Mathematics, Physics, Chemistry, Computer Science, and Problem Solving.
+
+  - title: A Little More About Me
+    layout: text
+    content: |
+      Outside of my professional work, I have a variety of hobbies and interests:
+      - Rock climbing
+      - Gaming
+      - Knitting
+      - Exploring Cloud Native and DevOps innovations
+
+  - title: Certifications
+    layout: text
+    content: |
+      <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+        <div style="text-align: center;">
+          <a href="https://www.credly.com/badges/your-cka-badge-link" target="_blank">
+            <img src="https://www.credly.com/badges/be191344-9508-4b8a-825f-181429b27433/public_url" alt="CKA Badge" width="120" height="120">
+          </a>
+          <div>CKA</div>
+        </div>
+        <div style="text-align: center;">
+          <a href="https://www.credly.com/badges/your-cks-badge-link" target="_blank">
+            <img src="images/aws-ai-early.png" alt="CKS Badge" width="80" height="80">
+          </a>
+          <div>CKS</div>
+        </div>
+        <div style="text-align: center;">
+          <a href="https://www.credly.com/badges/your-aws-saa-badge-link" target="_blank">
+            <img src="https://images.credly.com/size/110x110/images/2e77c1c5-754b-4bf1-9a1b-32ac853bdd4c/image.png" alt="AWS SAA Badge" width="80" height="80">
+          </a>
+          <div>AWS SAA</div>
+        </div>
+      </div>
+
+
+    # Add any other certifications you have here
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
